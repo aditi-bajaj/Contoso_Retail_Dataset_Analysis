@@ -1,0 +1,17 @@
+# Test script
+Scripts
+Scripts/Test_Script.sql
+
+# DBeaver
+.dbeaver/
+
+# VS Code
+.vscode/
+
+# Eclipse / DBeaver workspace files
+.project
+*.prefs
+.settings
+
+# Local bookmarks
+*.bm
