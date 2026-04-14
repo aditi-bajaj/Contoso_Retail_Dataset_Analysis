@@ -2,10 +2,10 @@ WITH
   monthly_sales
   AS(
       SELECT
-        TO_CHAR(orderdate, 'YYYY-MM') AS month,
+        DATE_TRUNC('month', orderdate)::DATE AS month,
         SUM(quantity * netprice / exchangerate) AS net_revenue
       FROM sales
-      WHERE EXTRACT(YEAR FROM orderdate) = 2023
+      WHERE orderdate BETWEEN DATE '2022-01-01' AND DATE '2023-12-31'
       GROUP BY month
       ORDER BY month
   )
