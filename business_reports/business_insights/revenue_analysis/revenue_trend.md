@@ -1,6 +1,6 @@
 ## 📊 Revenue Trend Analysis
 
-![](../insights_images/revenue_trend.png)
+![](../../images/revenue_trend.png)
 
 ### Key Insights
 
